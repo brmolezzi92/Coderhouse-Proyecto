@@ -30,7 +30,34 @@ h3,
 h3 {
     color: #028fa3;
 }
-
+.button__Basic {
+    width: 8rem;
+    height: 5rem;
+    font-weight: 500;
+    background-color: #028fa3;
+    border: none;
+    transition: all 0.7s ease;
+}
+.button__Basic:hover{
+    transform: scale(1.10);
+    background-color: #bd1a2f;
+    color: white;
+    width: 10rem;
+}
+.icon__Red{
+    transition: all 1s ease;
+}
+.icon__Red:hover{
+    transform: scale(1.5);
+    filter: invert();
+}
+.icon__Info{
+    margin: 0.5rem;
+    transition: all 1s ease;
+}
+.icon__Info:hover{
+    transform: scale(1.5);
+}
 
 /*
 -----------------------------------------
