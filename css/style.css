@@ -164,7 +164,7 @@ h3 {
 }
 .gallery__Item img:hover{
     transform: scale(1.05);
-    margin: 10px 0px;
+    margin: 0.8rem 0rem;
 }
 
 .gallery__Item audio {
