@@ -1,11 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box;
+    font-family: $fontKanit;   
+}
+.nav-link {
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 body {
-    background-color:#028fa3 ;
+    background-color:$mainColor;
 }
 
 ul {
@@ -23,5 +28,5 @@ h1,
 h2,
 h3,
 h4 {
-    color: #028fa3;
+    color: $mainColor;
 }

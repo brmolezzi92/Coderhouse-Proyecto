@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 body {
@@ -24,4 +31,36 @@ h2,
 h3,
 h4 {
   color: #028fa3;
+}
+
+.footer__Index {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+/*
+-----------------------------------------
+----INDEX-----------320px----------------
+-----------------------------------------
+*/
+.container__Grid {
+  height: 75vh;
+  margin: 1.2rem;
+  gap: 1.5rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.container__Grid .grid__Item1 {
+  grid-area: 1;
+}
+.container__Grid .grid__Item2 {
+  grid-area: 2;
+}
+.container__Grid .grid__Item3 {
+  grid-area: 3;
 }/*# sourceMappingURL=estilo.css.map */

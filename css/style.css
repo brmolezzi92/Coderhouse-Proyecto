@@ -1,35 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    background-color:#028fa3 ;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-link {
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-main {
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-}
-
-h1,
-h2,
-h3,
-h4 {
-    color: #028fa3;
-}
 .button__Basic {
     width: 8rem;
     height: 5rem;
@@ -64,41 +33,6 @@ h4 {
 ----MOBILE FIRST----320px----------------
 -----------------------------------------
 */
-/*
------------------------------------------
-----INDEX-----------320px----------------
------------------------------------------
-*/
-.container__Grid {
-    height: 75vh;
-    margin: 1.2rem;
-    gap: 1.5rem;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-}
-
-.grid__Item1 {
-    grid-area: 1;
-}
-
-.grid__Item2 {
-    grid-area: 2;
-}
-
-.grid__Item3 {
-    grid-area: 3;
-}
-
-.footer__Index {
-    display: flex;
-    justify-content: space-around;
-
-}
-
 /*
 -----------------------------------------
 ----INICIO----------320px----------------

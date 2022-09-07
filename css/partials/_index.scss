@@ -1,0 +1,28 @@
+/*
+-----------------------------------------
+----INDEX-----------320px----------------
+-----------------------------------------
+*/
+.container__Grid {
+    height: 75vh;
+    margin: 1.2rem;
+    gap: 1.5rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+        .grid__Item1 {
+            grid-area: 1;
+        }
+        
+        .grid__Item2 {
+            grid-area: 2;
+        }
+        
+        .grid__Item3 {
+            grid-area: 3;
+        }
+}
