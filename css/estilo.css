@@ -60,4 +60,9 @@ h4 {
 }
 .container__Grid .grid__Item3 {
   grid-area: 2;
-}/*# sourceMappingURL=estilo.css.map */
+}
+
+.grid__Item1{
+  color: red;
+}
+/*# sourceMappingURL=estilo.css.map */

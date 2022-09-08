@@ -231,6 +231,7 @@ aside img {
     margin: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .container__Contacto {
@@ -239,13 +240,14 @@ aside img {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr;
     margin: 20px;
+    align-items: center;
 }
 
 .formulario__Contacto {
     display: flex;
     flex-direction: column;
     margin: 10px;
-    height: 80%;
+    align-items: center;
 }
 
 .formulario__Contacto input {
@@ -254,6 +256,7 @@ aside img {
     border: none;
     border-bottom: 5px solid #bd1a2f;
     border-radius: 10px;
+    width: 80%;
 }
 
 .formulario__Contacto textarea {
@@ -262,6 +265,7 @@ aside img {
     border: none;
     border-radius: 10px;
     border-bottom: 5px solid #bd1a2f;
+    width: 80%;
 }
 
 .formulario__Contacto button {
@@ -278,7 +282,7 @@ aside img {
 }
 
 .container__Mapa iframe {
-    width: 90%;
+    width: 80%;
     border-radius: 10px;
 }
 
