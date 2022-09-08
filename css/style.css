@@ -1,4 +1,11 @@
 
+.info__Index{
+    width: 300px;
+}
+.info__Inicio{
+    width: 70%;
+}
+
 .button__Basic {
     width: 8rem;
     height: 5rem;
@@ -368,7 +375,12 @@ MODIFICACIONES RESPONSIVE----------------
     .inicio__Grid {
         display: flex;
     }
-
+    .grid__Inicio__Item1{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    }
     .grid__Inicio__Item2 {
         width: 70%;
     }
