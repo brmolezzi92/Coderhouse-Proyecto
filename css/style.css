@@ -1,7 +1,4 @@
 
-.info__Index{
-    width: 300px;
-}
 .info__Inicio{
     width: 70%;
 }
@@ -10,9 +7,7 @@
     width: 200px;
     height: 200px;
 }
-.button__Index{
-margin-bottom: 1rem;
-}
+
 
 .button__Basic {
     width: 8rem;
@@ -42,6 +37,10 @@ margin-bottom: 1rem;
 .icon__Info:hover{
     transform: scale(1.5);
 }
+.button__Index{
+    margin-bottom: 1rem;
+    height: 3rem;
+    }
 
 /*
 -----------------------------------------
