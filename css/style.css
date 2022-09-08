@@ -10,6 +10,9 @@
     width: 200px;
     height: 200px;
 }
+.button__Index{
+margin-bottom: 1rem;
+}
 
 .button__Basic {
     width: 8rem;
