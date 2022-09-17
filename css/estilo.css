@@ -1,1 +1,111 @@
-/*# sourceMappingURL=estilo.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+.footer__Index {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+/*
+-----------------------------------------
+----INDEX-----------320px----------------
+-----------------------------------------
+*/
+.container__Grid {
+  height: 75vh;
+  margin: 1.2rem;
+  gap: 1.5rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.container__Grid .grid__Item1 {
+  grid-area: 1;
+}
+.container__Grid .grid__Item1 .img__Oriley__Logo {
+  margin-top: 5rem;
+  width: 200px;
+  height: 200px;
+}
+.container__Grid .grid__Item2 {
+  grid-area: 2;
+}
+.container__Grid .grid__Item3 {
+  grid-area: 3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+body {
+  background-color: #028fa3;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #028fa3;
+}
+
+.button__Basic {
+  width: 8rem;
+  height: 5rem;
+  font-weight: 500;
+  background-color: #028fa3;
+  border: none;
+  transition: all 0.7s ease;
+}
+
+.button__Basic:hover {
+  transform: scale(1.1);
+  background-color: #bd1a2f;
+  color: white;
+  width: 10rem;
+}
+
+.icon__Red {
+  transition: all 1s ease;
+}
+
+.icon__Red:hover {
+  transform: scale(1.8);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.icon__Info {
+  margin: 0.5rem;
+  transition: all 1s ease;
+}
+
+.icon__Info:hover {
+  transform: scale(1.5);
+}
+
+.button__Index {
+  margin-bottom: 1rem;
+  height: 5rem;
+}/*# sourceMappingURL=estilo.css.map */
