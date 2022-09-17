@@ -16,6 +16,12 @@
 
         .grid__Item1 {
             grid-area: 1;
+            
+            .img__Oriley__Logo{
+                margin-top: 5rem;
+                width: 200px;
+                height: 200px;
+            }
         }
         
         .grid__Item2 {

@@ -51,15 +51,16 @@ h4 {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
 }
 .container__Grid .grid__Item1 {
   grid-area: 1;
 }
-.container__Grid .grid__Item3 {
+.container__Grid .grid__Item2 {
   grid-area: 2;
 }
-
-/*# sourceMappingURL=estilo.css.map */
+.container__Grid .grid__Item3 {
+  grid-area: 3;
+}/*# sourceMappingURL=estilo.css.map */
