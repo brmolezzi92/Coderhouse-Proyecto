@@ -91,9 +91,7 @@ h4 {
 }
 
 .icon__Red:hover {
-  transform: scale(1.8);
-  background-color: white;
-  border-radius: 50%;
+  transform: scale(1.5);
 }
 
 .icon__Info {
