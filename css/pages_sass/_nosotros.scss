@@ -1,0 +1,138 @@
+aside {
+    margin: 1.5rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0.3rem solid #028fa3;
+    
+    & p {
+        width: 80%;
+        margin: 1rem;
+    }
+    
+    & img {
+        width: 80%;
+    }
+}
+
+
+.nosotros__Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.3rem;
+    margin: 1.5rem;
+    
+    .nosotros__Section {
+        margin: 1.5rem;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+            
+        .nosotros__Title {
+                margin-bottom: 1.5rem;
+                width: 80%;
+                grid-area: 7;
+            }
+            
+            .quienes__Somos {
+                width: 80%;
+                grid-area: 8;
+            }
+            
+            .nuestra__Mision {
+                width: 80%;
+                grid-area: 9;
+            }
+            
+            .como__Trabajamos {
+                width: 80%;
+                grid-area: 10;
+            }
+    }
+}
+// ---------------------------------------------------------
+// --------------------RESPONSIVE---------------------------
+// ---------------------------------------------------------
+/*
+-----------------------------------------
+----Nosotros---------480px---------------
+-----------------------------------------
+*/
+@media(min-width:480px) {
+   
+    .nosotros__Main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    aside {
+        margin: 1.5rem;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 5px solid #028fa3;
+        
+        & p {
+            width: 80%;
+            margin: 10px;
+        }
+    
+        & img {
+            width: 80%;
+        }
+    }
+}
+
+/*
+-----------------------------------------
+----Nosotros---------768px-a-1024px------
+-----------------------------------------
+*/
+@media(min-width:768px) {
+    .container__Nosotros {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+        .nosotros__Main {
+            height: 80vh;
+            align-self: center;
+            margin: 1.5rem;
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    aside {
+        width: 35%;
+        padding: 0.8rem;
+        border-top: none;
+        border-left: 0.3rem solid $mainColor;
+        & img {
+            width: 100%;
+        }
+    }
+
+
+}
+
+/*
+-----------------------------------------
+----Nosotros---------1024px----------
+-----------------------------------------
+*/
+@media(min-width:1024px) {
+    aside {
+        width: 20%;
+    }
+}
+

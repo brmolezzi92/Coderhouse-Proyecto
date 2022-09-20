@@ -36,6 +36,162 @@
   grid-area: 3;
 }
 
+.container__Inicio {
+  display: flex;
+  flex-direction: column;
+  margin: 1.2rem;
+  /*align-self a hijo .gallery*/
+}
+
+.inicio__Grid {
+  margin: 1.2rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  border-radius: 0.8rem;
+  justify-content: center;
+}
+.inicio__Grid .grid__Inicio__Item1 {
+  margin: 0.8rem;
+  grid-area: 4;
+}
+.inicio__Grid .grid__Inicio__Item2 {
+  grid-area: 5;
+}
+.inicio__Grid .grid__Inicio__Item2 video {
+  width: 90%;
+}
+
+.gallery {
+  text-align: center;
+  margin: 1.5rem;
+  width: 90%;
+  display: grid;
+  justify-items: center;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-self: center;
+}
+.gallery .gallery__Item {
+  height: 20rem;
+  width: 15rem;
+  gap: 2rem;
+}
+.gallery .gallery__Item img:hover {
+  transform: scale(1.05);
+  margin: 0.8rem 0rem;
+}
+.gallery .gallery__Item audio {
+  width: 100%;
+}
+.gallery .gallery__Item img {
+  height: 70%;
+  width: 100%;
+}
+.gallery .gallery__Item--sizeImg img {
+  height: 70%;
+  width: 100%;
+  border-radius: 10px;
+}
+.gallery .gallery__Item--sizeImg img .gallery__Item img:hover {
+  transform: scale(1.05);
+  margin: 0.8rem 0rem;
+}
+
+@media (min-width: 480px) {
+  .gallery {
+    width: 90%;
+    justify-items: center;
+    gap: 20px;
+  }
+  .gallery__Item {
+    height: 70%;
+    width: 70%;
+    gap: 2rem;
+  }
+}
+/*
+-----------------------------------------
+----Inicio---------768px-----------------
+-----------------------------------------
+*/
+@media (min-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery .gallery__Item--sizeImg {
+    width: 70%;
+    height: 80%;
+  }
+}
+/*
+-----------------------------------------
+----Inicio---------862px-a-1024px--------
+-----------------------------------------
+*/
+@media (min-width: 862px) {
+  .gallery {
+    width: 90%;
+    justify-items: center;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-self: center;
+  }
+  .gallery .gallery__Item {
+    height: 70%;
+    width: 15rem;
+    gap: 2rem;
+  }
+  .gallery .gallery__Item img {
+    height: 70%;
+    width: 100%;
+  }
+  .gallery .gallery__Item--sizeImg img {
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .gallery .gallery__Item audio {
+    width: 100%;
+  }
+}
+/*
+-----------------------------------------
+----Inicio---------1024px----------------
+-----------------------------------------
+*/
+@media (min-width: 1024px) {
+  .gallery {
+    display: grid;
+  }
+  .gallery .gallery__Item {
+    width: 350px;
+    height: 350px;
+  }
+  .inicio__Grid {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .inicio__Grid video {
+    width: 70%;
+  }
+  .inicio__Grid .grid__Inicio__Item1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+  }
+  .inicio__Grid .grid__Inicio__Item2 {
+    width: 70%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -78,7 +234,6 @@ h4 {
   border: none;
   transition: all 0.7s ease;
 }
-
 .button__Basic:hover {
   transform: scale(1.1);
   background-color: #bd1a2f;
@@ -89,7 +244,6 @@ h4 {
 .icon__Red {
   transition: all 1s ease;
 }
-
 .icon__Red:hover {
   transform: scale(1.5);
 }
@@ -98,7 +252,6 @@ h4 {
   margin: 0.5rem;
   transition: all 1s ease;
 }
-
 .icon__Info:hover {
   transform: scale(1.5);
 }
@@ -106,4 +259,260 @@ h4 {
 .button__Index {
   margin-bottom: 1rem;
   height: 5rem;
+}
+
+aside {
+  margin: 1.5rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 0.3rem solid #028fa3;
+}
+aside p {
+  width: 80%;
+  margin: 1rem;
+}
+aside img {
+  width: 80%;
+}
+
+.nosotros__Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.3rem;
+  margin: 1.5rem;
+}
+.nosotros__Main .nosotros__Section {
+  margin: 1.5rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.nosotros__Main .nosotros__Section .nosotros__Title {
+  margin-bottom: 1.5rem;
+  width: 80%;
+  grid-area: 7;
+}
+.nosotros__Main .nosotros__Section .quienes__Somos {
+  width: 80%;
+  grid-area: 8;
+}
+.nosotros__Main .nosotros__Section .nuestra__Mision {
+  width: 80%;
+  grid-area: 9;
+}
+.nosotros__Main .nosotros__Section .como__Trabajamos {
+  width: 80%;
+  grid-area: 10;
+}
+
+/*
+-----------------------------------------
+----Nosotros---------480px---------------
+-----------------------------------------
+*/
+@media (min-width: 480px) {
+  .nosotros__Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  aside {
+    margin: 1.5rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 5px solid #028fa3;
+  }
+  aside p {
+    width: 80%;
+    margin: 10px;
+  }
+  aside img {
+    width: 80%;
+  }
+}
+/*
+-----------------------------------------
+----Nosotros---------768px-a-1024px------
+-----------------------------------------
+*/
+@media (min-width: 768px) {
+  .container__Nosotros {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container__Nosotros .nosotros__Main {
+    height: 80vh;
+    align-self: center;
+    margin: 1.5rem;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  aside {
+    width: 35%;
+    padding: 0.8rem;
+    border-top: none;
+    border-left: 0.3rem solid #028fa3;
+  }
+  aside img {
+    width: 100%;
+  }
+}
+/*
+-----------------------------------------
+----Nosotros---------1024px----------
+-----------------------------------------
+*/
+@media (min-width: 1024px) {
+  aside {
+    width: 20%;
+  }
+}
+.servicios__Main {
+  margin: 1.5rem;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+}
+.servicios__Main .servicios__Grid {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.servicios__Main .servicios__Grid .grid__Item__Servicios {
+  width: 80%;
+}
+.servicios__Main .servicios__Produccion video {
+  width: 80%;
+  margin: 2rem;
+}
+
+.tarjeta {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tarjeta audio {
+  margin-bottom: 0.8rem;
+  width: 100%;
+}
+.tarjeta img {
+  width: 30%;
+}
+
+/*
+-----------------------------------------
+----SERVICIOS--------600px---------------
+-----------------------------------------
+*/
+@media (min-width: 600px) {
+  .servicios__Main {
+    display: flex;
+    justify-content: center;
+  }
+  .servicios__Main .servicios__Grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "grid__Item__Servicios service_produccion" "service_cards      service_cards";
+  }
+  .servicios__Main .gallery__Item {
+    width: 80%;
+  }
+  .servicio__Cards {
+    grid-area: service_cards;
+    display: flex;
+    align-items: center;
+  }
+  .servicio__Cards audio {
+    margin-top: 1.5rem;
+  }
+  .servicios__Produccion {
+    grid-area: service_produccion;
+  }
+  .servicios__Produccion video {
+    width: 80%;
+    margin-bottom: 1.5rem;
+  }
+  .sala__Button {
+    margin-top: 1.5rem;
+  }
+  .sala__Ensayo h4 {
+    margin-top: 1.5rem;
+  }
+}
+.contacto__Main {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacto__Main .container__Contacto {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  margin: 20px;
+  align-items: center;
+}
+.contacto__Main .container__Contacto .formulario__Contacto {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+}
+.contacto__Main .container__Contacto .formulario__Contacto input {
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  border-bottom: 5px solid #bd1a2f;
+  border-radius: 10px;
+  width: 80%;
+}
+.contacto__Main .container__Contacto .formulario__Contacto textarea {
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 5px solid #bd1a2f;
+  width: 80%;
+}
+.contacto__Main .container__Contacto .formulario__Contacto button {
+  margin: 10px;
+  border: none;
+  font-weight: 700;
+  align-self: center;
+}
+.contacto__Main .container__Contacto .container__Mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto__Main .container__Contacto .container__Mapa iframe {
+  width: 80%;
+  border-radius: 10px;
+}
+.contacto__Main .container__Contacto .container__Mapa li {
+  margin: 10px;
+  font-size: 1.3rem;
+}
+.contacto__Main .container__Contacto .container__Mapa img {
+  width: 25px;
 }/*# sourceMappingURL=estilo.css.map */

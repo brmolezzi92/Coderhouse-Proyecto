@@ -1,0 +1,100 @@
+.servicios__Main {
+    margin: 1.5rem;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    
+    .servicios__Grid {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        
+        .grid__Item__Servicios {
+            width: 80%;
+        }
+    }
+    .servicios__Produccion video {
+        width: 80%;
+        margin: 2rem;
+    }
+}
+
+.tarjeta {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    & audio {
+        margin-bottom: 0.8rem;
+        width: 100%;
+    }
+    
+    & img {
+        width: 30%;
+    }
+}
+
+// ---------------------------------------------------------
+// --------------------RESPONSIVE---------------------------
+// ---------------------------------------------------------
+
+
+/*
+-----------------------------------------
+----SERVICIOS--------600px---------------
+-----------------------------------------
+*/
+@media(min-width:600px) {
+    .servicios__Main {
+        display: flex;
+        justify-content: center;
+        
+        .servicios__Grid {
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+            grid-template-areas:
+                "grid__Item__Servicios service_produccion"
+                "service_cards      service_cards"
+            ;
+        }
+        .gallery__Item {
+            width: 80%;
+        }
+    }
+
+
+    .servicio__Cards {
+        grid-area: service_cards;
+        display: flex;
+        align-items: center;
+        & audio {
+            margin-top: 1.5rem;
+        }
+
+    }
+
+    .servicios__Produccion {
+        grid-area: service_produccion;
+        
+        & video {
+            width: 80%;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .sala__Button {
+        margin-top: 1.5rem;
+    }
+
+    .sala__Ensayo h4 {
+        margin-top: 1.5rem;
+    }
+}

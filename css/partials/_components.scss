@@ -7,26 +7,31 @@
     background-color: #028fa3;
     border: none;
     transition: all 0.7s ease;
+
+    &:hover{
+        transform: scale(1.10);
+        background-color: #bd1a2f;
+        color: white;
+        width: 10rem;
+    }
 }
-.button__Basic:hover{
-    transform: scale(1.10);
-    background-color: #bd1a2f;
-    color: white;
-    width: 10rem;
-}
+
 .icon__Red{
     transition: all 1s ease;
+    
+    &:hover{
+        transform: scale(1.5);
+    }
 }
-.icon__Red:hover{
-    transform: scale(1.5);
-}
+
 .icon__Info{
     margin: 0.5rem;
     transition: all 1s ease;
+    &:hover{
+        transform: scale(1.5);
+    }
 }
-.icon__Info:hover{
-    transform: scale(1.5);
-}
+
 .button__Index{
     margin-bottom: 1rem;
     height: 5rem;
