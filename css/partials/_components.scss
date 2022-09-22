@@ -1,0 +1,62 @@
+
+
+.button__Basic {
+    width: 8rem;
+    height: 5rem;
+    font-weight: 500;
+    background-color: $mainColor;
+    border: none;
+    transition: all 0.7s ease;
+
+    &:hover{
+        transform: scale(1.10);
+        background-color: $subMainColor;
+        color: white;
+        width: 10rem;
+    }
+}
+
+.icon__Red{
+    transition: all 1s ease;
+    
+    &:hover{
+        transform: scale(1.5);
+    }
+}
+//---------------------------------------
+//EXTEND
+//---------------------------------------
+.icon__Info{
+    margin: 0.5rem;
+    @extend .icon__Red;
+}
+
+.button__Index{
+    margin-bottom: 1rem;
+    height: 5rem;
+}
+
+
+
+
+// MAP-----------------------------------------------------------------------------------
+
+$tools:(
+    facebook-circle: blue,
+    instagram-alt: rgb(210, 143, 238),
+    spotify: green,
+    youtube: red 
+);
+@each $tool, $colordered in $tools {
+       .footer__Index{
+            .bxl-#{$tool} {
+            color: $colordered;
+            }
+        }
+}
+//MIXIN LINEA 150 SCSS "INICIO"
+// @mixin size($width, $height){
+//     width: $width;
+//     height: $height;
+// }
+

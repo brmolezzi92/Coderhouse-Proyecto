@@ -1,11 +1,7 @@
 
-.img__Oriley__Logo{
-    margin-top: 5rem;
-    width: 200px;
-    height: 200px;
-}
 
-.button__Basic {
+
+/* .button__Basic {
     width: 8rem;
     height: 5rem;
     font-weight: 500;
@@ -36,7 +32,7 @@
 .button__Index{
     margin-bottom: 1rem;
     height: 5rem;
-}
+}   */
 
 /*
 -----------------------------------------
@@ -48,12 +44,12 @@
 ----INICIO----------320px----------------
 -----------------------------------------
 */
-.container__Inicio {
+/* .container__Inicio {
     display: flex;
     flex-direction: column;
     margin: 1.2rem;
     /*align-self a hijo .gallery*/
-}
+/* }
 
 .inicio__Grid {
     margin: 1.2rem;
@@ -113,7 +109,7 @@
 
 .gallery__Item audio {
     width: 100%;
-}
+} */
 
 /*
 -----------------------------------------
@@ -342,6 +338,7 @@ MODIFICACIONES RESPONSIVE----------------
 -----------------------------------------
 */
 @media(min-width:862px) {
+    
     .gallery {
         width: 90%;
         justify-items: center;
