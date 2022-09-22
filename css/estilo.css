@@ -14,12 +14,12 @@
   height: 75vh;
   margin: 1.2rem;
   gap: 1.5rem;
-  text-align: center;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
+  text-align: center;
 }
 .container__Grid .grid__Item1 {
   grid-area: 1;
@@ -76,8 +76,8 @@
   align-self: center;
 }
 .gallery .gallery__Item {
-  height: 20rem;
-  width: 15rem;
+  height: 80%;
+  width: 80%;
   gap: 2rem;
 }
 .gallery .gallery__Item img:hover {
@@ -107,11 +107,6 @@
     justify-items: center;
     gap: 20px;
   }
-  .gallery__Item {
-    height: 70%;
-    width: 70%;
-    gap: 2rem;
-  }
 }
 /*
 -----------------------------------------
@@ -124,10 +119,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .gallery .gallery__Item--sizeImg {
-    width: 70%;
-    height: 80%;
   }
 }
 /*
@@ -145,9 +136,9 @@
     align-self: center;
   }
   .gallery .gallery__Item {
-    height: 70%;
-    width: 15rem;
     gap: 2rem;
+    width: 350px;
+    height: 350px;
   }
   .gallery .gallery__Item img {
     height: 70%;
@@ -167,19 +158,20 @@
 ----Inicio---------1024px----------------
 -----------------------------------------
 */
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .gallery {
     display: grid;
   }
   .gallery .gallery__Item {
-    width: 350px;
-    height: 350px;
+    width: 350;
+    height: 350;
   }
   .inicio__Grid {
     display: flex;
     flex-direction: row-reverse;
   }
   .inicio__Grid video {
+    margin: 2rem;
     width: 70%;
   }
   .inicio__Grid .grid__Inicio__Item1 {
@@ -226,6 +218,11 @@ h4 {
   color: #028fa3;
 }
 
+p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 .button__Basic {
   width: 8rem;
   height: 5rem;
@@ -241,24 +238,36 @@ h4 {
   width: 10rem;
 }
 
-.icon__Red {
+.icon__Red, .icon__Info {
   transition: all 1s ease;
 }
-.icon__Red:hover {
+.icon__Red:hover, .icon__Info:hover {
   transform: scale(1.5);
 }
 
 .icon__Info {
   margin: 0.5rem;
-  transition: all 1s ease;
-}
-.icon__Info:hover {
-  transform: scale(1.5);
 }
 
 .button__Index {
   margin-bottom: 1rem;
   height: 5rem;
+}
+
+.footer__Index .bxl-facebook-circle {
+  color: blue;
+}
+
+.footer__Index .bxl-instagram-alt {
+  color: rgb(210, 143, 238);
+}
+
+.footer__Index .bxl-spotify {
+  color: green;
+}
+
+.footer__Index .bxl-youtube {
+  color: red;
 }
 
 aside {
@@ -319,7 +328,6 @@ aside img {
   .nosotros__Main {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   aside {
     margin: 1.5rem;
@@ -349,7 +357,6 @@ aside img {
     flex-direction: column;
   }
   .container__Nosotros .nosotros__Main {
-    height: 80vh;
     align-self: center;
     margin: 1.5rem;
     width: 80%;
@@ -401,8 +408,13 @@ aside img {
 }
 
 .tarjeta {
+  border-radius: 5px;
+  box-shadow: 10px 10px 20px #028fa3;
+  padding: 1rem;
+  border: 3px solid #bd1a2f;
   margin: 2rem;
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
 }
@@ -416,10 +428,10 @@ aside img {
 
 /*
 -----------------------------------------
-----SERVICIOS--------600px---------------
+----SERVICIOS--------800px---------------
 -----------------------------------------
 */
-@media (min-width: 600px) {
+@media (min-width: 804px) {
   .servicios__Main {
     display: flex;
     justify-content: center;
@@ -432,14 +444,16 @@ aside img {
     justify-items: center;
     align-items: center;
     grid-template-areas: "grid__Item__Servicios service_produccion" "service_cards      service_cards";
+    width: 100%;
   }
   .servicios__Main .gallery__Item {
-    width: 80%;
+    width: 100%;
   }
   .servicio__Cards {
     grid-area: service_cards;
     display: flex;
     align-items: center;
+    justify-content: space-around;
   }
   .servicio__Cards audio {
     margin-top: 1.5rem;
@@ -506,7 +520,7 @@ aside img {
   align-items: center;
 }
 .contacto__Main .container__Contacto .container__Mapa iframe {
-  width: 80%;
+  width: 100%;
   border-radius: 10px;
 }
 .contacto__Main .container__Contacto .container__Mapa li {
@@ -515,4 +529,21 @@ aside img {
 }
 .contacto__Main .container__Contacto .container__Mapa img {
   width: 25px;
+}
+
+@media (min-width: 768px) {
+  .container__Contacto {
+    width: 100%;
+    justify-items: center;
+  }
+  .container__Formulario {
+    width: 80%;
+  }
+  .container__Mapa {
+    width: 80%;
+    margin: 1.5rem;
+  }
+  .container__Mapa iframe {
+    margin: 1.5rem;
+  }
 }/*# sourceMappingURL=estilo.css.map */

@@ -49,7 +49,7 @@
             flex-direction: column;
             align-items: center;
             & iframe {
-                width: 80%;
+                width: 100%;
                 border-radius: 10px;
             }
             
@@ -61,6 +61,32 @@
             & img {
                 width: 25px;
             }
+        }
+    }
+}
+
+// ---------------------------------------------------------
+// --------------------RESPONSIVE---------------------------
+// ---------------------------------------------------------
+
+
+@media(min-width:768px) {
+    
+    .container__Contacto {
+        width: 100%;
+        justify-items: center;
+    }
+
+    .container__Formulario {
+        width: 80%;
+    }
+
+    .container__Mapa {
+        width: 80%;
+        margin: 1.5rem;
+        
+        & iframe {
+            margin: 1.5rem;
         }
     }
 }

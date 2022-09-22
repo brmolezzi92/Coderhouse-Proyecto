@@ -40,8 +40,8 @@
     align-self: center;
 
     .gallery__Item {
-        height: 20rem;
-        width: 15rem;
+        height: 80%;
+        width: 80%;
         gap: 2rem;
         & img:hover{
             transform: scale(1.05);
@@ -80,13 +80,7 @@
     .gallery {
         width: 90%;
         justify-items: center;
-        gap: 20px;
-        
-        &__Item {
-            height: 70%;
-            width: 70%;
-            gap: 2rem;
-        }
+        gap: 20px;   
     }
 }
 
@@ -100,12 +94,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        
-        .gallery__Item--sizeImg {
-            width: 70%;
-            height: 80%;
-        }
+        justify-content: center;     
     }  
 }
 
@@ -125,9 +114,9 @@
         align-self: center;
         
         .gallery__Item {
-            height: 70%;
-            width: 15rem;
             gap: 2rem;
+            width: 350px;
+            height: 350px;
             & img {
                 height: 70%;
                 width: 100%;
@@ -141,8 +130,7 @@
         .gallery__Item audio {
             width: 100%;
         }
-    }
-    
+    }  
 }
 
 /*
@@ -150,20 +138,24 @@
 ----Inicio---------1024px----------------
 -----------------------------------------
 */
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}
 
-
-@media(min-width:1024px) {
+@media(min-width:1200px) {
     .gallery {
         display: grid;
         .gallery__Item{
-            width: 350px;
-            height: 350px;
+            @include size(350, 350);  
         }
     }
     .inicio__Grid {
         display: flex;
         flex-direction: row-reverse;
+        
         & video {
+            margin: 2rem;
             width: 70%;
         }
         .grid__Inicio__Item1{
