@@ -53,7 +53,7 @@
 ----SERVICIOS--------800px---------------
 -----------------------------------------
 */
-@media(min-width:804px) {
+@media(min-width:990px) {
     .servicios__Main {
         display: flex;
         justify-content: center;
@@ -80,7 +80,6 @@
     .servicio__Cards {
         grid-area: service_cards;
         display: flex;
-        align-items: center;
         justify-content: space-around;
         & audio {
             margin-top: 1.5rem;
@@ -103,6 +102,10 @@
 
     .sala__Ensayo h4 {
         margin-top: 1.5rem;
+    }
+    .tarjeta{
+        padding: 3rem;
+        margin: 3rem;
     }
 }
 

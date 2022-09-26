@@ -431,7 +431,7 @@ aside img {
 ----SERVICIOS--------800px---------------
 -----------------------------------------
 */
-@media (min-width: 804px) {
+@media (min-width: 990px) {
   .servicios__Main {
     display: flex;
     justify-content: center;
@@ -452,7 +452,6 @@ aside img {
   .servicio__Cards {
     grid-area: service_cards;
     display: flex;
-    align-items: center;
     justify-content: space-around;
   }
   .servicio__Cards audio {
@@ -470,6 +469,10 @@ aside img {
   }
   .sala__Ensayo h4 {
     margin-top: 1.5rem;
+  }
+  .tarjeta {
+    padding: 3rem;
+    margin: 3rem;
   }
 }
 .contacto__Main {
